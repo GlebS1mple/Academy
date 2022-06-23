@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <title>Академия кровли</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="popup">
+            <div class="container">
+                <div class="popup__main">
+                    <div class="popup__wrapper">
+                        <img src="img/cross.png" alt="Крестик(закрыть модальное окно)" class="popup__close">
+                        <h1 class="popup__heading">Быстро <br> оставить заявку</h1>
+                        <p class="popup__text">Введите номер, мы позвоним вам в течение 10 минут в рабочее время</p>
+                        <p class="popup__subtext">Пн–Пт 9:00 - 18:00, Сб 10:00 - 18:00</p>
+                        <p class="popup__instruction">Введите номер телефона</p>
+                        <form class="popup__form">
+                            <div class="popup__flex">
+                                <input type="tel" placeholder="+7 ( _ _ _) _ _ - _ _ - _ _" class="popup__tel" id="tel"
+                                    required pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$">
+                            </div>
+                            <div class="popup__flex">
+                                <button type="submit" class="popup__confirmbutton">
+                                    <p class="popup__btntext">Позвоните мне</p>
+                                    <img src="img/arrow.png" alt="Стрелка вправо" class="popup__btnarrow">
+                                </button>
+                            </div>
+                            <div class="popup__inputblock">
+                                <input type="checkbox" class="popup__checkbox" required>
+                                <div class="popup__confblock">
+                                    <p class="popup__labeltext">
+                                        Нажимая кнопку вы соглашаетесь с условиями
+                                    </p>
+                                    <p class="popup__conf">Политики
+                                        конфиденциальности</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="container">
+                <div class="modal__main">
+                    <div class="modal__wrapper">
+                        <img src="img/cross.png" alt="Крестик(закрыть модальное окно)" class="modal__close">
+                        <p class="modal__text">Спасибо! Мы скоро с вами свяжемся!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__burger">
+            <img src="img/burger.png" alt="" class="header__burgerimg">
+        </div>
+        <nav class="nav">
+            <div class="header__burgermenu">
+                <div class="header__info info">
+                    <p class="info__timetable">
+                        <span class="header__bold">Пн-Пт</span> 9:00 - 18:00, <span class="header__bold">Сб</span> 10:00
+                        -
+                        18:00
+                    </p>
+                    <a href="tel:8 (800) 222-54-60" class="info__tel">8 (800) 222-54-60</a>
+                    <button class="info__subbtn">Позвоните мне</button>
+                </div>
+                <img src="img/cross.png" type="image/png" class="header__close">
+                <img src="img/lg.png" alt="Логотип" class="header__logo">
+                <li><a href="#" class="nav__image">
+                        <img src="img/home.svg" alt="Дом(главная страницы)" class="nav__icon">
+                    </a></li>
+                <li><a href="#" class="nav__link">Каталог</a></li>
+                <li><a href="#" class="nav__link">Преимущества</a></li>
+                <li><a href="#" class="nav__link">Примеры работ</a></li>
+                <li><a href="#" class="nav__link">Монтаж</a></li>
+                <li><a href="#" class="nav__link">Отзывы</a></li>
+                <li><a href="#" class="nav__link">Ответы на вопросы</a></li>
+                <li><a href="#" class="nav__link">Контакты</a></li>
+
+                <div class="header__download download">
+                    <div class="download__circle">
+                        Pdf
+                    </div>
+                    <button class="download__btn">
+                        Скачать прайс-каталог
+                    </button>
+                </div>
+                <div class="header__contacts contacts">
+                    <p class="contacts__text"> Отвечаем <span class="header__bold"> онлайн</span></p>
+                    <ul class="contacts__list">
+                        <li><a href="https://www.viber.com/ru/" target="_blank" rel="noopener noreferrer"
+                                class="contacts__link">
+                                <img src="img/whatsapp.png" alt="Вайбер" class="contacts__icon contacts__icon_viber">
+                            </a></li>
+                        <li><a href="https://www.whatsapp.com/?lang=ru" target="_blank" rel="noopener noreferrer"
+                                class="contacts__link">
+                                <img src="img/viber.png" alt="Ватсапп" class="contacts__icon contacts__icon_whatsapp">
+                            </a></li>
+                        <li><a href="https://web.telegram.org/" target="_blank" rel="noopener noreferrer"
+                                class="contacts__link">
+                                <img src="img/telegram.png" alt="Телеграмм"
+                                    class="contacts__icon contacts__icon_telegram">
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="nav__list">
+                <li><a href="#" class="nav__image">
+                        <img src="img/home.svg" alt="Дом(главная страницы)" class="nav__icon">
+                    </a></li>
+                <li><a href="#" class="nav__link">Каталог</a></li>
+                <li><a href="#" class="nav__link">Преимущества</a></li>
+                <li><a href="#" class="nav__link">Примеры работ</a></li>
+                <li><a href="#" class="nav__link">Монтаж</a></li>
+                <li><a href="#" class="nav__link">Отзывы</a></li>
+                <li><a href="#" class="nav__link">Ответы на вопросы</a></li>
+                <li><a href="#" class="nav__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <img src="img/mob.png" alt="Логотип" class="header__logomob">
+        <header class="header">
+            <div class="header__textblock">
+                <p class="header__text">
+                    <span class="header__bold">Кровельные и фасадные материалы</span> в Тюмени и области.
+                </p>
+                <p class="header__text">
+                    Профессиональный монтаж
+                    с 2010 года.
+                </p>
+            </div>
+            <div class="header__download download">
+                <div class="download__circle">
+                    Pdf
+                </div>
+                <button class="download__btn">
+                    Скачать прайс-каталог
+                </button>
+            </div>
+            <img src="img/lg.png" alt="Логотип" class="header__logo">
+
+            <div class="header__contacts contacts">
+                <p class="contacts__text"> Отвечаем <span class="header__bold"> онлайн</span></p>
+                <ul class="contacts__list">
+                    <li><a href="https://www.viber.com/ru/" target="_blank" rel="noopener noreferrer"
+                            class="contacts__link">
+                            <img src="img/whatsapp.png" alt="Вайбер" class="contacts__icon contacts__icon_viber">
+                        </a></li>
+                    <li><a href="https://www.whatsapp.com/?lang=ru" target="_blank" rel="noopener noreferrer"
+                            class="contacts__link">
+                            <img src="img/viber.png" alt="Ватсапп" class="contacts__icon contacts__icon_whatsapp">
+                        </a></li>
+                    <li><a href="https://web.telegram.org/" target="_blank" rel="noopener noreferrer"
+                            class="contacts__link">
+                            <img src="img/telegram.png" alt="Телеграмм" class="contacts__icon contacts__icon_telegram">
+                        </a></li>
+                </ul>
+            </div>
+            <div class="header__info info">
+                <p class="info__timetable">
+                    <span class="header__bold">Пн-Пт</span> 9:00 - 18:00, <span class="header__bold">Сб</span> 10:00 -
+                    18:00
+                </p>
+                <a href="tel:8 (800) 222-54-60" class="info__tel">8 (800) 222-54-60</a>
+                <button class="info__btn">Позвоните мне</button>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__points points">
+                <img src="img/plus.png" alt="Плюс" class="points__add">
+                <ul class="points__list">
+                    <li class="points__element">
+                        <p class="point__eltext"><span class="header__bold">Гарантия от 50 лет</span> на материалы и 5
+                            лет на монтаж</p>
+                        <img class="points__shadow" src="img/menu_shadow 5.png" alt="">
+                    </li>
+
+                    <li class="points__element">
+                        <p class="point__eltext"><span class="header__bold">Замер, монтажный
+                                проект</span> и
+                            еще 4 услуги
+                            бесплатно</p>
+                        <img class="points__shadow" src="img/menu_shadow 5.png" alt="">
+                    </li>
+                    <li class="points__element">
+                        <p class="point__eltext"><span class="header__bold">Сметы
+                                точны</span> до копейки</p>
+                        <img class="points__shadow" src="img/menu_shadow 5.png" alt="">
+                    </li>
+                    <li class="points__element">
+                        <p class="point__eltext"><span class="header__bold">Поэтапная оплата,</span>
+                            кредит или рассрочка</p>
+                        <img class="points__shadow" src="img/menu_shadow 5.png" alt="">
+                    </li>
+                    <li class="points__element">
+                        <p class="point__eltext"><span class="header__bold">Наши крыши в
+                                каждом поселке</span>
+                            и дачном сообществе
+                            региона</p>
+                        <img class="points__shadow" src="img/menu_shadow 5.png" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="main__about about">
+                <h1 class="about__heading">Продажа <span class="header__bold">кровельных материалов</span> в
+                    Тюмени и Тюменской области </h1>
+                <div class="about__sub">
+                    <img src="img/circles.png" alt="Круги" class="about__circles">
+                    <p class="about__subheading">и монтаж под ключ</p>
+                </div>
+                <div class="about__interaction">
+                    <div class="about__buttons buttons">
+                        <a href="#" class="buttons__green button">
+                            <p class="button__text">Рассчитать стоимость
+                                материалов и монтажа</p>
+                            <img src="img/arrow.png" alt="Стрелка" class="buttton__image">
+                        </a>
+                        <a href="#" class="buttons__orange button">
+                            <p class="button__text">записаться на
+                                просмотр объектов</p>
+                            <img src="img/arrow.png" alt="Стрелка" class="buttton__image">
+                        </a>
+                    </div>
+                    <div class="about__promotion promotion">
+                        <img src="img/press.png" alt="Иконка" class="promotion__img">
+                        <p class="promotion__text">
+                            <span class="header__bold">Ответьте на несколько
+                                вопросов и получите</span> сметную
+                            стоимость и 3 подарка за
+                            экономию нашего времени
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
